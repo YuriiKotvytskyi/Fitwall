@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+  <title>Fitwall Content Locking Network</title>
+  <meta name="description"
+    content="Fitwall.com is an incentive mobile &amp; desktop content locking network that helps affiliates, webmasters, and developers monetize their mobile + desktop traffic by promoting iOS and Android apps + websites.">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com/" crossorigin="">
+
+
+  <script type="text/javascript" async="" src="./assets/analytics.js.download"></script>
+  <script type="text/javascript" async="" src="./assets/js"></script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org/","@type":"OnlineBusiness","name":"Fitwall Content Locking Network","description":"Fitwall.com is an incentive mobile & desktop content locking network that helps affiliates, webmasters, and developers monetize their mobile + desktop traffic by promoting iOS and Android apps + websites.","logo":"https://fitwall.com/home-assets/images/logo-3.png","address":{"@type":"PostalAddress","addressCountry":"United States","addressRegion":"IL","addressLocality":"Chicago","streetAddress":"222 W. Merchandise Mart Plaza, Suite 1212","postalCode":"60654"},"url":"https://fitwall.com"}</script>
+  <link rel="preload" href="./assets/hero-bg-lighter.png" as="image">
+  <link rel="preload" href="./assets/hero-bg.png" as="image">
+  <link rel="preload" href="./assets/all-offers.png" as="image">
+  <link rel="preload" href="./assets/wow.min.js.download" as="script">
+  <link rel="preload" href="./assets/app-b37a3b20.js.download" as="script">
+  <link rel="preload" href="./assets/app-d347d34c.css" as="style">
+
+  <!-- Fav Icon -->
+  <link rel="shortcut icon" href="https://fitwall.com/wp-content/uploads/2015/11/favicon.png">
+
+  <!-- Google Fonts -->
+  <link href="./assets/css2" rel="stylesheet">
+  <link href="./assets/icon" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link href="./assets/all.min.css" rel="stylesheet">
+  <link href="./assets/animate.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.1/css/all.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+
+  <link href="./assets/app-d347d34c.css" rel="stylesheet">
+  <script async="" src="./assets/js(1)"></script>
+  <link href="./assets/app-abUI5oK5.css" rel="stylesheet">
+
+  <style>
+    #register,
+    #login {
+      display: none;
+      position: fixed;
+      z-index: 4;
+      padding-top: 100px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgb(0, 0, 0);
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .box-body .row div {
+      padding: 0 5px;
+    }
+
+    .box-body .row>div>label {
+      margin-left: 5px;
+    }
+  </style>
+
+</head>
+
+
+<!-- page wrapper -->
+
+<body x-data="page" :class="{&#39;overflow-hidden&#39;: sidebar}" style="background-color: #080a1b;">
+
+  <!-- preloader -->
+  <div
+    class="fixed inset-0 bg-sapphire z-[999999] bg-no-repeat bg-center bg-[url(&#39;/website/images/loader.gif&#39;)] hidden"
+    id="preloader"></div>
+  <!-- preloader -->
+
+
+  <!-- main header -->
+  <header>
+
+    <div class="h-16 md:h-[100px] absolute inset-0 z-[2]">
+      <div class="flex justify-between mx-auto w-full-sm md:w-full-md lg:w-full-lg xl:w-content">
+        <a href="javascript:void(0)"><img class="mt-5 md:mt-8 w-[123px] md:w-auto" src="./assets/logo-3.png"
+            alt="logo"></a>
+        <ul class="items-center hidden gap-8 mt-8 md:flex">
+          <li><a href="javascript:void(0)" class="text-base font-medium text-white">Home</a></li>
+          <li><a href="javascript:void(0)" class="text-base font-medium text-white">Learn</a></li>
+          <li><a href="javascript:void(0)" class="text-base font-medium text-white">Blog</a></li>
+          <li><a href="javascript:void(0)" class="text-base font-medium text-white"
+              onclick="btnSign('btnLogin')">Login</a></li>
+          <li><a href="javascript:void(0)" class="text-base font-medium text-white"
+              onclick="btnSign('btnRegister')">Sign Up</a></li>
+        </ul>
+        <a href="javascript:void(0)" class="mt-5 md:hidden toggle" x-on:click="toggleSidebar">
+          <span class="material-icons text-[28px] text-white">menu</span>
+        </a>
+      </div>
+    </div>
+
+    <!--sticky Header-->
+    <template x-if="true"></template>
+    <div class="fixed top-0 left-0 w-full transition-all duration-500 shadow-2xl opacity-1 z-10"
+      :class="{&#39;opacity-1 z-10&#39;: sticky, &#39;opacity-0 z-0&#39;: !sticky}"
+      style="background-image: linear-gradient(180deg, #202e5a 60px, #202e5a73 100%); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); border-radius: 0 0 8px 8px; box-shadow: 0px -1px 20px 20px rgba(156,176,234,0.25), 0 0 1px 2px rgba(28,35,54,0.3);">
+      <div class="flex items-center justify-between mx-auto w-full-sm md:w-full-md lg:w-full-lg xl:w-content">
+        <a href="javascript:void(0)">
+          <img class="w-[123px] md:w-auto md:h-[45px] my-2.5" src="./assets/logo-3.png">
+        </a>
+        <ul class="items-center hidden gap-8 md:flex">
+          <li><a href="javascript:void(0)" class="text-base font-medium text-white">Home</a></li>
+          <li><a href="javascript:void(0)" class="text-base font-medium text-white">Learn</a></li>
+          <li><a href="javascript:void(0)" class="text-base font-medium text-white">Blog</a></li>
+          <li><a href="javascript:void(0)" class="text-base font-medium text-white"
+              onclick="btnSign('btnLogin')">Login</a></li>
+          <li><a href="javascript:void(0)" class="text-base font-medium text-white"
+              onclick="btnSign('btnRegister')">Sign Up</a></li>
+        </ul>
+        <a href="javascript:void(0)" class="mt-2 md:hidden toggle" x-on:click="toggleSidebar">
+          <span class="material-icons text-[28px] text-white">menu</span>
+        </a>
+      </div>
+    </div>
+  </header>
+  <!-- main-header end -->
+  <template x-if="true"></template>
+  <div class="fixed inset-0 bg-dark-2 z-[11] opacity-0 invisible translate-x-full"
+    :class="{&#39;opacity-0 invisible translate-x-full&#39;: !sidebar, &#39;opacity-60 visible translate-x-0&#39;: sidebar} toggle"
+    x-on:click="toggleSidebar"></div>
+  <template x-if="true"></template>
+  <div
+    class="fixed right-0 top-0 w-[300px] h-full z-[12] bg-dark-2/[0.85] transition-all duration-700 shadow-2xl overflow-auto opacity-0 invisible translate-x-full"
+    :class="{&#39;opacity-0 invisible translate-x-full&#39;: !sidebar, &#39;opacity-1 visible translate-x-0&#39;: sidebar}">
+    <div class="absolute opacity-50 bg-dark-2 "></div>
+    <a href="javascript:void(0)"
+      class="absolute flex items-center justify-center w-6 h-6 transition-all duration-500 top-2 right-2 hover:rotate-90 toggle"
+      x-on:click="toggleSidebar">
+      <span class="text-white material-icons">close</span>
+    </a>
+
+    <div class="px-12 py-8 text-center">
+      <a href="javascript:void(0)"><img src="./assets/logo-5.png" alt="" title=""></a>
+    </div>
+    <ul class="mb-3 border-t border-solid border-grey-2">
+      <li class="py-3 pl-8 border-b border-solid border-grey-2">
+        <a href="javascript:void(0)" class="text-sm font-medium text-white hover:text-sapphire">Home</a>
+      </li>
+      <li class="py-3 pl-8 border-b border-solid border-grey-2">
+        <a href="javascript:void(0)" class="text-sm font-medium text-white hover:text-sapphire">Learn</a>
+      </li>
+      <li class="py-3 pl-8 border-b border-solid border-grey-2">
+        <a href="javascript:void(0)" class="text-sm font-medium text-white hover:text-sapphire">Blog</a>
+      </li>
+      <li class="py-3 pl-8 border-b border-solid border-grey-2">
+        <a href="javascript:void(0)" class="text-sm font-medium text-white hover:text-sapphire"
+          onclick="btnSign('btnLogin', 'i-login')" x-on:click="toggleSidebar">Login</a>
+      </li>
+      <li class="py-3 pl-8 border-b border-solid border-grey-2">
+        <a href="javascript:void(0)" class="text-sm font-medium text-white hover:text-sapphire"
+          onclick="btnSign('btnRegister', 'i-register')" x-on:click="toggleSidebar">Sign Up</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- hero section -->
+  <section class="relative overflow-hidden pt-8 md:pt-[51px]" data-theme="dark">
+    <div class="absolute inset-0 object-cover object-left h-full lg:object-fill lg:w-full"
+      style="background: radial-gradient(115.96% 180.96% at 33.25% -0.66%, #080A1C 41.5%, rgba(4, 4, 4, 0) 65%); background-blend-mode: multiply;">
+    </div>
+    <div class="w-full-sm md:w-full-md lg:w-full-lg xl:w-content relative z-[1] mx-auto mb-12 md:mb-[90px]">
+      <div
+        class="w-[450px] max-w-full md:w-1/2 mt-16 md:mt-24 lg:mt-36 float-left md:pr-4 lg:pr-7 ml-0 xs:ml-[calc(50%-225px)] md:ml-0">
+        <h1
+          class="text-center md:text-left px-5 md:px-0 text-2xl md:text-3xl lg:text-4xl xl:text-[54px] font-semibold leading-normal md:leading-[45px] lg:leading-[54px] xl:leading-[81px]"
+          style="color: #2F9691;">
+          All-in-one Content Locking Platform
+        </h1>
+        <p class="mt-2 text-xs text-center text-white md:text-left md:text-sm lg:text-base xl:text-lg">
+          Easily monetize your website, blog, app, or social media accounts with
+          <span class="text-lg font-semibold text-sapphire md:text-lg md:text-base">Fitwall</span> profit
+          generating content locking tools.
+        </p>
+        <a class="block relative h-[36px] md:h-[46px] border-solid pl-6 pt-px md:pt-1.5 rounded-full bg-white overflow-hidden group mx-auto md:mx-0 leading-[30px] mt-6 w-44 md:w-48 pt-px md:pt-1.5 border-2 border-white"
+          href="javascript:void(0)" onclick="btnSign('btnSign')">
+          <span
+            class="absolute top-0 left-0 w-full h-full transition-transform duration-500 origin-top-right scale-x-0 scale-y-100 rounded-full bg-sapphire group-hover:scale-x-100 group-hover:origin-bottom-left ease-slow-in-out"></span>
+          <span
+            class="relative text-xs font-semibold uppercase duration-500 md:text-sm text-sapphire group-hover:text-white">Sign
+            Up</span>
+          <div
+            class="absolute right-0 top-0 aspect-[1/1] h-full rounded-full bg-sapphire group-hover:bg-transparent ease-in duration-[900ms]">
+            <i
+              class="fas fa-chevron-right text-white text-[8px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></i>
+          </div>
+        </a>
+      </div>
+      <div class="w-full relative md:w-1/2 mt-16 md:mt-[70px] lg:mt-[105px] float-left flex flex-row-reverse items-end">
+        <img src="./assets/all-offers.png" class="-mr-2.5 md:-mr-5 lg:-mr-10 xl:-mr-w-content" alt="All Offers"
+          data-xblocker="passed" style="visibility: visible;">
+        <img src="./assets/iphone-2.png"
+          class="absolute -left-2.5 -bottom-4 md:left-0 md:bottom-0 md:relative max-w-1/2 md:w-1/2 md:-mr-[40%] md:-mb-[10%] lg:w-auto lg:-mr-56 xl:-mr-40 xl:-mb-14"
+          alt="iPhone" data-xblocker="passed" style="visibility: visible;">
+      </div>
+      <div class="clear-left"></div>
+    </div>
+  </section>
+
+  <!-- How it works section -->
+  <section>
+    <div
+      class="text-center md:text-left w-full-sm md:w-full-md lg:w-full-lg xl:w-content mt-3.5 mx-auto wow slideInLeft animated"
+      data-wow-delay="00ms" data-wow-duration="1500ms"
+      style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: slideInLeft;">
+      <div class="text-xs font-semibold uppercase md:text-sm text-sapphire">What is FITWALL?</div>
+      <h2
+        class="mt-2.5 text-white font-bold text-2xl md:text-3xl lg:text-4xl xl:text-[40px] xl:leading-[48px] tracking-tight">
+        How it works
+      </h2>
+    </div>
+    <div class="relative mx-auto w-full-sm md:w-full-md lg:w-full-lg xl:w-content">
+      <div class="w-full md:w-1/2 float-left mt-16 md:mt-[103px] relative wow slideInLeft animated"
+        data-wow-delay="00ms" data-wow-duration="1500ms"
+        style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: slideInLeft;">
+        <img loading="lazy" src="./assets/lockcontent-bg-lighter.png"
+          class="w-full xl:w-auto -ml-2.5 md:-ml-5 lg:-ml-10 xl:-ml-w-content" alt="Background" data-xblocker="passed"
+          style="visibility: visible;">
+        <img loading="lazy" src="./assets/lockcontent-bg.png"
+          class="absolute w-[93.86%] xl:w-auto -left-2.5 md:-left-5 lg:-left-10 xl:-left-w-content top-[7%] xl:top-[47px]"
+          alt="Background" data-xblocker="passed" style="visibility: visible;">
+        <img loading="lazy" src="./assets/iphon-3.png"
+          class="absolute -top-[47px] left-auto right-0 md:right-auto md:left-[72px] lg:left-[106px] xl:left-[calc(600px-50vw+223px)]"
+          alt="iPhone" data-xblocker="passed" style="visibility: visible;">
+      </div>
+      <div
+        class="md:w-1/2 float-left left-0 xs:left-[calc(50%-225px)] md:left-0 top-0 mt-[70%] md:mt-44 absolute md:relative px-2.5 pt-12 pb-5 md:p-0 md:pl-7 rounded-lg bg-alice-blue md:bg-transparent shadow-lg md:shadow-transparent w-[450px] max-w-full wow fadeInUp animated"
+        data-wow-delay="300ms" data-wow-duration="1500ms"
+        style="visibility: visible; animation-duration: 1500ms; animation-delay: 300ms; animation-name: fadeInUp;">
+        <h3
+          class="md:ml-1.5 mt-0.5 font-semibold text-dark-2 text-xl md:text-2xl lg:text-3xl xl:text-[32px] md:leading-[30px] tracking-tight text-center md:text-left"
+          style="color: #2F9691;">
+          Lock Content
+        </h3>
+        <p class="md:ml-1.5 mt-4 text-white text-xs leading-normal md:text-sm lg:text-base">
+          Have an e-book, website or video that you want to lock? With our easy to use content locking tools
+          you can setup a locker within 5 minutes that will require the user to complete an action before they
+          are given access to your content
+        </p>
+        <ul class="ml-[calc(50%-100px)] md:ml-0">
+          <li class="flex items-center gap-2.5 mt-3.5 md:mt-5 lg:mt-6 xl:mt-7">
+            <span class="text-xs font-semibold text-rosy md:text-sm lg:text-base">01</span>
+            <div class="w-0.5 h-3.5 md:h-[18px] bg-dark-2 opacity-[0.12]"></div>
+            <span
+              class="font-medium text-dark-2 text-base md:text-lg lg:text-xl xl:text-[22px] leading-6 md:leading-7 lg:leading-[30px] xl:leading-8"
+              style="color: #279EE7;">
+              IOS &amp; Android Apps
+            </span>
+          </li>
+          <li class="flex items-center gap-2.5 mt-4 md:mt-6 lg:mt-7 xl:mt-8">
+            <span class="text-xs font-semibold text-orange-1 md:text-sm lg:text-base">02</span>
+            <div class="w-0.5 h-3.5 md:h-[18px] bg-dark-2 opacity-[0.12]"></div>
+            <span
+              class="font-medium text-dark-2 text-base md:text-lg lg:text-xl xl:text-[22px] leading-6 md:leading-7 lg:leading-[30px] xl:leading-8"
+              style="color: #279EE7;">
+              Always Free to Do
+            </span>
+          </li>
+          <li class="flex items-center gap-2.5 mt-4 md:mt-6 lg:mt-7 xl:mt-8">
+            <span class="text-xs font-semibold text-sapphire md:text-sm lg:text-base">03</span>
+            <div class="w-0.5 h-3.5 md:h-[18px] bg-dark-2 opacity-[0.12]"></div>
+            <span
+              class="font-medium text-dark-2 text-base md:text-lg lg:text-xl xl:text-[22px] leading-6 md:leading-7 lg:leading-[30px] xl:leading-8"
+              style="color: #279EE7;">
+              Fully Customizable
+            </span>
+          </li>
+        </ul>
+        <span
+          class="absolute text-white text-[100px] md:text-[204px] leading-none font-bold opacity-[0.16] left-3 md:left-7 top-1 md:-top-24">1</span>
+      </div>
+      <div class="clear-left"></div>
+    </div>
+    <div class="w-full-sm md:w-full-md lg:w-full-lg xl:w-content relative mt-[182px] mx-auto">
+      <div
+        class="w-[450px] max-w-full md:w-1/2 ml-0 xs:ml-[calc(50%-225px)] md:ml-0 float-left relative wow slideInLeft animated"
+        data-wow-delay="00ms" data-wow-duration="1500ms"
+        style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: slideInLeft;">
+        <h3
+          class="font-semibold text-dark-2 text-xl md:text-2xl lg:text-3xl xl:text-[32px] md:leading-[30px] tracking-tight text-center md:text-left"
+          style="color: #2F9691;">Send Traffic</h3>
+        <p class="mt-4 text-xs leading-normal text-white md:text-sm lg:text-base">
+          You can now send traffic to the content locker utilising landing pages or directly linking our content locker
+          to your audience
+          or on your website, email, blog, app or even a QR code, Integrating either with a direct link,
+          Javascript or using our API!
+        </p>
+        <span
+          class="absolute text-blue-light text-[100px] md:text-[204px] leading-none font-bold opacity-[0.16] left-0 md:-left-3 -top-11 md:-top-[104px]">2</span>
+        <img loading="lazy" src="./assets/dotline-1.png" alt=""
+          class="hidden xl:block absolute min-w-[741px] -top-[660px] left-[210px]" data-xblocker="passed"
+          style="visibility: visible;">
+      </div>
+      <div class="w-full md:w-1/2 float-left mt-8 md:-mt-[120px] md:pl-7 text-center md:text-left wow fadeInUp animated"
+        data-wow-delay="300ms" data-wow-duration="1500ms"
+        style="visibility: visible; animation-duration: 1500ms; animation-delay: 300ms; animation-name: fadeInUp;">
+        <img loading="lazy" src="./assets/chart-1.png" class="max-w-full w-[450px] md:w-auto" alt="Chart"
+          data-xblocker="passed" style="visibility: visible;">
+      </div>
+      <div class="clear-left"></div>
+    </div>
+    <div class="w-full-sm md:w-full-md lg:w-full-lg xl:w-content mx-auto mt-[132px] relative">
+      <div class="relative float-left w-full md:w-1/2 -mt-14 wow slideInLeft animated" data-wow-delay="00ms"
+        data-wow-duration="1500ms"
+        style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: slideInLeft;">
+        <img loading="lazy" src="./assets/get-paid-bg-lighter.png"
+          class="w-full xs:w-[81.5%] xl:w-auto -ml-2.5 md:-ml-5 lg:-ml-10 xl:-ml-w-content" alt="Background"
+          data-xblocker="passed" style="visibility: visible;">
+        <img loading="lazy" src="./assets/get-paid-bg.png"
+          class="absolute w-[89%] xs:w-[72.5%] xl:w-auto top-[4.5%] xl:top-12 -left-2.5 md:-left-5 lg:-left-10 xl:-left-w-content"
+          alt="Background" data-xblocker="passed" style="visibility: visible;">
+        <img loading="lazy" src="./assets/payment-history.png"
+          class="xl:min-w-[683px] absolute top-[15%] md:top-[166px] -left-2.5 md:-left-5 lg:-left-10 xl:-left-w-content"
+          alt="Payment History" data-xblocker="passed" style="visibility: visible;">
+      </div>
+      <div
+        class="md:w-1/2 float-left left-0 xs:left-[calc(50%-225px)] md:left-0 top-0 mt-[100%] md:mt-[204px] absolute md:relative px-2.5 pt-12 pb-5 md:p-0 md:pl-7 rounded-lg bg-alice-blue md:bg-transparent shadow-lg md:shadow-transparent w-[450px] max-w-full wow fadeInUp animated"
+        data-wow-delay="300ms" data-wow-duration="1500ms"
+        style="visibility: visible; animation-duration: 1500ms; animation-delay: 300ms; animation-name: fadeInUp;">
+        <h3
+          class="font-semibold text-dark-2 text-xl md:text-2xl lg:text-3xl xl:text-[32px] leading-[30px] tracking-tight text-center md:text-left"
+          style="color: #2F9691;">
+          Get Paid
+        </h3>
+        <p class="mt-4 text-xs leading-normal text-white md:text-sm lg:text-base">
+          Fitwall has the most comprehensible selection of payout methfitwall than any other content locking
+          networks, we payout net-7 (weekly) to over 25,000 current publishers, our payment methfitwall are
+          Crypto, Paypal, Wire, Direct Deposit and E-Cheque
+        </p>
+        <ul class="ml-[calc(50%-90px)] md:ml-0">
+          <li class="flex items-center gap-2.5 mt-3.5 md:mt-5 lg:mt-6 xl:mt-7">
+            <span class="text-xs font-semibold text-rosy md:text-sm lg:text-base">01</span>
+            <div class="w-0.5 h-3.5 md:h-[18px] bg-dark-2 opacity-[0.12]"></div>
+            <span
+              class="font-medium text-dark-2 text-base md:text-lg lg:text-xl xl:text-[22px] leading-6 md:leading-7 lg:leading-[30px] xl:leading-8"
+              style="color: #279EE7;">Weekly Payments</span>
+          </li>
+          <li class="flex items-center gap-2.5 mt-4 md:mt-6 lg:mt-7 xl:mt-8">
+            <span class="text-xs font-semibold text-orange-1 md:text-sm lg:text-base">02</span>
+            <div class="w-0.5 h-3.5 md:h-[18px] bg-dark-2 opacity-[0.12]"></div>
+            <span
+              class="font-medium text-dark-2 text-base md:text-lg lg:text-xl xl:text-[22px] leading-6 md:leading-7 lg:leading-[30px] xl:leading-8"
+              style="color: #279EE7;">Highest Payouts</span>
+          </li>
+          <li class="flex items-center gap-2.5 mt-4 md:mt-6 lg:mt-7 xl:mt-8">
+            <span class="text-xs font-semibold text-sapphire md:text-sm lg:text-base">03</span>
+            <div class="w-0.5 h-3.5 md:h-[18px] bg-dark-2 opacity-[0.12]"></div>
+            <span
+              class="font-medium text-dark-2 text-base md:text-lg lg:text-xl xl:text-[22px] leading-6 md:leading-7 lg:leading-[30px] xl:leading-8"
+              style="color: #279EE7;">Live Leads</span>
+          </li>
+        </ul>
+        <span
+          class="absolute text-blue-light text-[100px] md:text-[204px] leading-none font-bold opacity-[0.16] left-2 top-1 md:-top-32">3</span>
+        <img loading="lazy" src="./assets/dotline-2.png" alt=""
+          class="hidden xl:block absolute min-w-[663px] -top-[496px] -left-[375px]" data-xblocker="passed"
+          style="visibility: visible;">
+      </div>
+      <div class="clear-left"></div>
+    </div>
+  </section>
+
+  <!-- Profitable section -->
+  <section class="relative mt-16 xs:mt-10 md:mt-0 xl:mt-8 pb-[70px]">
+    <img loading="lazy" src="./assets/profitable-bg.png"
+      class="absolute top-0 left-0 object-cover object-left h-full lg:object-fill lg:w-full" alt="Background"
+      data-xblocker="passed" style="visibility: visible;">
+    <div class="relative mx-auto w-full-sm md:w-full-md lg:w-full-lg xl:w-content">
+      <div
+        class="w-[450px] max-w-full md:w-1/2 float-left mt-[183px] ml-0 xs:ml-[calc(50%-225px)] md:ml-0 wow slideInLeft animated"
+        data-wow-delay="00ms" data-wow-duration="1500ms"
+        style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: slideInLeft;">
+        <div class="text-xs font-semibold text-center uppercase md:text-sm text-sapphire md:text-left">
+          Features
+        </div>
+        <h2
+          class="mt-2.5 text-dark-1 font-bold text-2xl md:text-3xl lg:text-4xl xl:text-[40px] leading-[48px] tracking-tight text-center md:text-left">
+          Insanely Profitable
+        </h2>
+        <p class="mt-3 text-grey-1 text-xs leading-normal md:text-sm lg:text-base xl:w-[464px] max-w-[464px]">
+          We don’t just make it easy to monetize your traffic with our desktop &amp; mobile content lockers.
+          We help you fully customize your locker and setup to maximize your traffic conversion rate.
+        </p>
+      </div>
+      <div
+        class="flex flex-row-reverse items-end float-left w-full mt-5 md:w-1/2 md:mt-16 lg:-mt-4 xl:-mt-36 wow fadeInUp animated"
+        data-wow-delay="300ms" data-wow-duration="1500ms"
+        style="visibility: visible; animation-duration: 1500ms; animation-delay: 300ms; animation-name: fadeInUp;">
+        <img loading="lazy" src="./assets/all-offers-1.png"
+          class="xl:min-w-[718px] -mr-2.5 md:-mr-5 lg:-mr-10 xl:-mr-w-content" alt="All Offers" data-xblocker="passed"
+          style="visibility: visible;">
+      </div>
+      <div class="clear-left"></div>
+    </div>
+    <div
+      class="w-full-sm xs:w-[450px] md:w-full-md lg:w-full-lg xl:w-content mx-auto relative grid md:grid-cols-2 xl:grid-cols-3 gap-x-[52px] gap-y-[34px] mt-8 md:mt-20 text-center md:text-left">
+      <div class="wow flipInY animated" data-wow-delay="00ms" data-wow-duration="1500ms"
+        style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: flipInY;">
+        <img loading="lazy" src="./assets/connections.png" class="block mx-auto md:mx-0" alt="Connections">
+        <h3 class="text-base font-semibold leading-8 mt-9 text-dark-1 md:text-lg md:whitespace-nowrap">Easy SEO
+          for Unlimited Niches</h3>
+        <p class="mt-2 text-xs leading-6 text-grey-2 md:text-sm md:leading-8">Harness the power of SEO across
+          diverse niches, making it easier than ever to rank high and pull in organic traffic.</p>
+      </div>
+      <div class="wow flipInY animated" data-wow-delay="00ms" data-wow-duration="1500ms"
+        style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: flipInY;">
+        <img loading="lazy" src="./assets/coin.png" class="block mx-auto md:mx-0" alt="Coin">
+        <h3 class="text-base font-semibold leading-8 mt-9 text-dark-1 md:text-lg md:whitespace-nowrap">Run Pay
+          Ads with Huge Returns</h3>
+        <p class="mt-2 text-xs leading-6 text-grey-2 md:text-sm md:leading-8">Invest in our high-conversion ad
+          campaigns that promise significant returns on your pay-per-click initiatives.</p>
+      </div>
+      <div class="wow flipInY animated" data-wow-delay="00ms" data-wow-duration="1500ms"
+        style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: flipInY;">
+        <img loading="lazy" src="./assets/growth.png" class="block mx-auto md:mx-0" alt="Growth">
+        <h3 class="text-base font-semibold leading-8 mt-9 text-dark-1 md:text-lg md:whitespace-nowrap">Use
+          Automation Software to Drive Traffic</h3>
+        <p class="mt-2 text-xs leading-6 text-grey-2 md:text-sm md:leading-8">Leverage cutting-edge automation
+          tools to streamline your campaigns, effortlessly driving traffic to your content.</p>
+      </div>
+      <div class="wow flipInY animated" data-wow-delay="00ms" data-wow-duration="1500ms"
+        style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: flipInY;">
+        <img loading="lazy" src="./assets/trophy.png" class="block mx-auto md:mx-0" alt="Trophy">
+        <h3 class="text-base font-semibold leading-8 mt-9 text-dark-1 md:text-lg md:whitespace-nowrap">Awards
+          &amp; Prizes</h3>
+        <p class="mt-2 text-xs leading-6 text-grey-2 md:text-sm md:leading-8">Stand a chance to win exciting
+          awards and prizes as you excel in your affiliate marketing endeavors with us.</p>
+      </div>
+      <div class="wow flipInY animated" data-wow-delay="00ms" data-wow-duration="1500ms"
+        style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: flipInY;">
+        <img loading="lazy" src="./assets/startup.png" class="block mx-auto md:mx-0" alt="Startup">
+        <h3 class="text-base font-semibold leading-8 mt-9 text-dark-1 md:text-lg md:whitespace-nowrap">Live
+          updates</h3>
+        <p class="mt-2 text-xs leading-6 text-grey-2 md:text-sm md:leading-8">Stay informed with real-time
+          updates on your campaigns, ensuring that you're always one step ahead.</p>
+      </div>
+      <div class="wow flipInY animated" data-wow-delay="00ms" data-wow-duration="1500ms"
+        style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: flipInY;">
+        <img loading="lazy" src="./assets/promotion.png" class="block mx-auto md:mx-0" alt="Promotion">
+        <h3 class="text-base font-semibold leading-8 mt-9 text-dark-1 md:text-lg md:whitespace-nowrap">Promote
+          Your Offers by Any Means</h3>
+        <p class="mt-2 text-xs leading-6 text-grey-2 md:text-sm md:leading-8">Gain the flexibility to market
+          your affiliate offers through a multitude of channels, from social media to email campaigns.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Learn platform section -->
+  <section class="py-16 md:pt-[100px] md:pb-20" id="learn">
+    <div class="mx-auto w-full-sm md:w-full-md lg:w-full-lg xl:w-content">
+      <div
+        class="w-[450px] max-w-full md:w-1/2 float-left md:mt-24 ml-0 xs:ml-[calc(50%-225px)] md:ml-0 wow slideInLeft animated"
+        data-wow-delay="00ms" data-wow-duration="1500ms"
+        style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: slideInLeft;">
+        <img loading="lazy" src="./assets/logo-2.png" class="block mx-auto md:mx-0" alt="Small Logo">
+        <h2
+          class="mt-2.5 text-dark-1 text-2xl md:text-3xl lg:text-4xl xl:text-[40px] leading-[48px] font-bold tracking-tight text-center md:text-left"
+          style="color: #2F9691;">
+          Learn Platform
+        </h2>
+        <p class="mt-4 text-xs leading-normal md:text-sm lg:text-base text-grey-1 xl:w-[496px] max-w-[496px]">
+          Learn from the most successful publishers.<br>Anything from technical web knowledge, to incredibly
+          creative methfitwall to generate more traffic.
+        </p>
+        <div class="flex flex-col items-center gap-2 mt-5 md:mt-11 lg:flex-row md:items-start lg:items-center">
+          <div class="pl-3">
+            <img loading="lazy" src="./assets/person1.png" class="-ml-3" alt="Person 1">
+            <img loading="lazy" src="./assets/person2.png" class="-ml-3" alt="Person 2">
+            <img loading="lazy" src="./assets/person3.png" class="-ml-3" alt="Person 3">
+            <img loading="lazy" src="./assets/person4.png" class="-ml-3" alt="Person 4">
+          </div>
+          <span class="text-dark-1 font-medium text-sm leading-[22px] tracking-tight"
+            style="color: rgba(54, 136, 141, 1);">
+            Very friendly and helpful community
+          </span>
+        </div>
+        <a class="block relative h-[36px] md:h-[46px] border-solid pl-6 pt-px md:pt-1.5 rounded-full bg-white overflow-hidden group mx-auto md:mx-0 leading-[30px] mt-6 w-44 md:w-56 pt-0.5 md:pt-2 border border-sapphire"
+          href="javascript:void(0)">
+          <span
+            class="absolute top-0 left-0 w-full h-full transition-transform duration-500 origin-top-right scale-x-0 scale-y-100 rounded-full bg-sapphire group-hover:scale-x-100 group-hover:origin-bottom-left ease-slow-in-out"></span>
+          <span
+            class="relative text-xs font-semibold uppercase duration-500 md:text-sm text-sapphire group-hover:text-white">Check
+            Out More</span>
+          <div
+            class="absolute right-0 top-0 aspect-[1/1] h-full rounded-full bg-sapphire group-hover:bg-transparent ease-in duration-[900ms]">
+            <i
+              class="fas fa-chevron-right text-white text-[8px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></i>
+          </div>
+        </a>
+      </div>
+      <div
+        class="w-[450px] max-w-full md:w-1/2 float-left pl-0 md:pl-7 ml-0 xs:ml-[calc(50%-225px)] md:ml-0 mt-14 md:mt-0 -mb-6 lg:-mt-6 wow fadeInUp animated"
+        data-wow-delay="300ms" data-wow-duration="1500ms"
+        style="visibility: visible; animation-duration: 1500ms; animation-delay: 300ms; animation-name: fadeInUp;">
+        <a href="javascript:void(0)" class="flex flex-col gap-4 overflow-hidden rounded-lg bg-alice-blue shadow-xl
+        lg:rounded-none lg:flex-row lg:gap-6 lg:py-6 lg:bg-transparent lg:shadow-transparent
+        lg:border-b border-periwinkle border-solid
+                mb-6 lg:mb-0
+        ">
+          <div
+            class="overflow-hidden aspect-[2/1]  rounded-t-lg lg:min-w-[176px] lg:w-44 lg:rounded-md lg:aspect-auto ">
+            <img loading="lazy" src="./assets/wGo4CCL1gYlObq2Ywnr6jgVy9u0y8E3SRjpg3Q8g.jpg"
+              alt="Fitwall Dashboard Basics"
+              class="object-cover object-center w-full h-full transition-all duration-300 hover:scale-110"
+              data-xblocker="passed" style="visibility: visible;">
+          </div>
+          <div class="flex flex-col flex-1 p-4 pt-0  lg:p-0 ">
+            <h3 class="flex items-center text-base font-semibold tracking-tight md:text-lg xl:text-xl text-dark-1"
+              style="color: #2F9691;">
+              Fitwall Dashboard Basics
+            </h3>
+            <p class="mt-2 text-xs leading-6 md:text-sm md:leading-8 text-grey-2">
+              Dashboard Basics<br>39:04&nbsp;&nbsp;·&nbsp;&nbsp;11 videos
+            </p>
+            <div class="flex-1"></div>
+            <span class="flex items-center mt-2 text-xs font-medium leading-6 text-sapphire md:text-sm md:leading-8">
+              Watch Now
+              <i class="fas fa-chevron-right text-sapphire ml-2.5"></i>
+            </span>
+          </div>
+        </a>
+        <a href="javascript:void(0)"
+          class="flex flex-col gap-4 overflow-hidden rounded-lg bg-alice-blue shadow-xl lg:rounded-none lg:flex-row lg:gap-6 lg:py-6 lg:bg-transparent lg:shadow-transparent lg:border-b border-periwinkle border-solid mb-6 lg:mb-0 ">
+          <div
+            class="overflow-hidden aspect-[2/1]  rounded-t-lg lg:min-w-[176px] lg:w-44 lg:rounded-md lg:aspect-auto ">
+            <img loading="lazy" src="./assets/8ZYDxo1LdsNey1l1gf6OkErIcjkPV0iGzhYIKRxB.jpg" alt="How To Make A Website"
+              class="object-cover object-center w-full h-full transition-all duration-300 hover:scale-110"
+              data-xblocker="passed" style="visibility: visible;">
+          </div>
+          <div class="flex flex-col flex-1 p-4 pt-0  lg:p-0 ">
+            <h3 class="flex items-center text-base font-semibold tracking-tight md:text-lg xl:text-xl text-dark-1"
+              style="color: #2F9691;">
+              How To Make A Website
+            </h3>
+            <p class="mt-2 text-xs leading-6 md:text-sm md:leading-8 text-grey-2">
+              How To Make A Website<br>25:12&nbsp;&nbsp;·&nbsp;&nbsp;9 videos
+            </p>
+            <div class="flex-1"></div>
+            <span class="flex items-center mt-2 text-xs font-medium leading-6 text-sapphire md:text-sm md:leading-8">
+              Watch Now
+              <i class="fas fa-chevron-right text-sapphire ml-2.5"></i>
+            </span>
+          </div>
+        </a>
+        <a href="javascript:void(0)"
+          class="flex flex-col gap-4 overflow-hidden rounded-lg bg-alice-blue shadow-xl lg:rounded-none lg:flex-row lg:gap-6 lg:py-6 lg:bg-transparent lg:shadow-transparent mb-6 lg:mb-0 ">
+          <div
+            class="overflow-hidden aspect-[2/1]  rounded-t-lg lg:min-w-[176px] lg:w-44 lg:rounded-md lg:aspect-auto ">
+            <img loading="lazy" src="./assets/hUdlSd6Sv6J8zN2WCNCgb9ae02yzYx6lGIz9lQos.jpg"
+              alt="Free Traffic With YouTube"
+              class="object-cover object-center w-full h-full transition-all duration-300 hover:scale-110"
+              data-xblocker="passed" style="visibility: visible;">
+          </div>
+          <div class="flex flex-col flex-1 p-4 pt-0  lg:p-0 ">
+            <h3 class="flex items-center text-base font-semibold tracking-tight md:text-lg xl:text-xl text-dark-1"
+              style="color: #2F9691;">
+              Free Traffic With YouTube
+            </h3>
+            <p class="mt-2 text-xs leading-6 md:text-sm md:leading-8 text-grey-2">
+              ____________<br>19:01&nbsp;&nbsp;·&nbsp;&nbsp;6 videos
+            </p>
+            <div class="flex-1"></div>
+            <span class="flex items-center mt-2 text-xs font-medium leading-6 text-sapphire md:text-sm md:leading-8">
+              Watch Now
+              <i class="fas fa-chevron-right text-sapphire ml-2.5"></i>
+            </span>
+          </div>
+        </a>
+      </div>
+      <div class="clear-left"></div>
+    </div>
+  </section>
+
+  <!-- Help section -->
+  <section class="pt-16 md:pt-[131px]" style="background-color: rgb(8 10 27);">
+    <div
+      class="w-full-sm xs:w-[450px] md:w-full-md lg:w-full-lg xl:w-content mx-auto border border-lavender border-solid rounded-md wow slideInLeft animated"
+      data-wow-delay="00ms" data-wow-duration="1500ms"
+      style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: slideInLeft;background-color: rgb(40 45 73);">
+      <div
+        class="w-full md:w-1/2 float-left py-4 md:pt-8 lg:pt-[63px] px-2.5 md:pl-10 lg:pl-[65px] md:pr-0 md:pb-10 lg:pb-20">
+        <h3
+          class="text-[22px] md:text-[24px] lg:text-[26px] xl:text-[28px] leading-[36px] md:leading-[40px] lg:leading-[44px] xl:leading-[48px] text-dark-1 tracking-tight font-bold text-center md:text-left"
+          style="color: #2F9691;
+                    ;">
+          We provide free help on<br>switching from other networks
+        </h3>
+        <p class="mt-3 text-xs leading-normal md:text-sm lg:text-base text-white xl:w-[462px] max-w-[462px]">
+          Contact one of our affiliate managers and they will assist you in moving your Mobile + desktop
+          traffic to <span style="color: rgb(15 124 255 / var(--tw-text-opacity));">Fitwall</span>. We have
+          made the switch effortless as simple as changing 1 line of code in your
+          landing pages to allow for monetization of Mobile &amp; Desktop from any other competitor online
+        </p>
+      </div>
+      <div class="relative float-left w-full pl-0 overflow-hidden md:w-1/2 md:pl-3 md:overflow-visible">
+        <img loading="lazy" src="./assets/iphone-premium.png"
+          class="relative md:absolute left-0 top-0 translate-x-[6%] md:translate-x-0 md:-top-[calc(95/1440*100vw)] lg:-top-[calc(116/1440*100vw)]"
+          alt="iPhone">
+      </div>
+      <div class="clear-left"></div>
+    </div>
+  </section>
+
+  <section class="bg-white">
+    <img loading="lazy" src="./assets/step-banner.png" class="relative mt-[calc(-112/1920*100%)] w-full" alt="Banner">
+    <div
+      class="w-full-sm xs:w-[450px] md:w-full-md lg:w-full-lg xl:w-content mx-auto flex flex-col md:flex-row gap-4 lg:gap-[30px] relative pt-10 pb-32 lg:pb-[196px] mt-[calc(-168/1920*100%)] bg-white">
+      <div
+        class="rounded-md bg-dark-1 p-6 lg:pt-[25px] lg:pl-[28.66px] flex-1 lg:h-[352px] bg-no-repeat bg-step-card bg-cover bg-top md:[background-position-x:-48px] md:[background-position-y:84px] wow flipInY animated"
+        data-wow-delay="00ms" data-wow-duration="1500ms"
+        style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: flipInY;">
+        <h4
+          class="text-[48px] leading-[58px] md:text-[56px] md:leading-[67px] lg:text-[64px] lg:leading-[76px] xl:text-[70px] xl:leading-[84px] font-semibold bg-clip-text text-transparent bg-gradient-to-b from-pink-1 to-pink-2">
+          01
+        </h4>
+        <h5 class="mt-6 text-base font-semibold tracking-tight md:text-lg xl:text-xl text-white">
+          Consultation
+        </h5>
+        <p class="pr-0 mt-8 text-xs text-grey-1 md:text-sm lg:text-base lg:pr-12 xl:pr-14">
+          First a consultation over skype , telegram, email, google meets or whatever you prefer
+        </p>
+      </div>
+      <div
+        class="rounded-md bg-dark-1 p-6 lg:pt-[25px] lg:pl-[28.66px] flex-1 lg:h-[352px] bg-no-repeat bg-step-card bg-cover bg-top md:[background-position-x:-48px] md:[background-position-y:84px] wow flipInY animated"
+        data-wow-delay="00ms" data-wow-duration="1500ms"
+        style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: flipInY;">
+        <h4
+          class="text-[48px] leading-[58px] md:text-[56px] md:leading-[67px] lg:text-[64px] lg:leading-[76px] xl:text-[70px] xl:leading-[84px] font-semibold bg-clip-text text-transparent bg-gradient-to-b from-orange-2 to-orange-3">
+          02
+        </h4>
+        <h5 class="mt-6 text-base font-semibold tracking-tight md:text-lg xl:text-xl text-white">
+          Website Review
+        </h5>
+        <p class="pr-0 mt-8 text-xs text-grey-1 md:text-sm lg:text-base lg:pr-12 xl:pr-14">
+          We review your website and current network you are working with in order to see how to best
+          integrate the locker
+        </p>
+      </div>
+      <div
+        class="rounded-md bg-dark-1 p-6 lg:pt-[25px] lg:pl-[28.66px] flex-1 lg:h-[352px] bg-no-repeat bg-step-card bg-cover bg-top md:[background-position-x:-48px] md:[background-position-y:84px] wow flipInY animated"
+        data-wow-delay="00ms" data-wow-duration="1500ms"
+        style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: flipInY;">
+        <h4
+          class="text-[48px] leading-[58px] md:text-[56px] md:leading-[67px] lg:text-[64px] lg:leading-[76px] xl:text-[70px] xl:leading-[84px] font-semibold bg-clip-text text-transparent bg-gradient-to-b from-blue-1 to-blue-2">
+          03
+        </h4>
+        <h5 class="mt-6 text-base font-semibold tracking-tight md:text-lg xl:text-xl text-white">
+          Modernization
+        </h5>
+        <p class="pr-0 mt-8 text-xs text-grey-1 md:text-sm lg:text-base lg:pr-12 xl:pr-14">
+          We edit your website or provide code to switch to Fitwall -- if you are not confident in doing it
+          yourself, one of our experts will do it for you!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class=" pb-[88px]" style="background-color: #f1f6ff;">
+    <img loading="lazy" src="./assets/team-banner.png" class="relative mt-[calc(-128/1920*100%)] w-full" alt="Banner">
+    <div class="w-full-sm md:w-full-md lg:w-full-lg xl:w-content mx-auto mt-[calc(-154/1920*100%)] relative "
+      style="background-color: rgb(241 246 255 / var(--tw-bg-opacity));">
+      <div
+        class="w-[450px] max-w-full md:w-1/2 float-left mt-12 relative ml-0 xs:ml-[calc(50%-225px)] md:ml-0 wow slideInLeft animated"
+        data-wow-delay="00ms" data-wow-duration="1500ms"
+        style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: slideInLeft;">
+        <div class="text-xs font-semibold text-center uppercase md:text-sm text-sapphire md:text-left">Contacts
+        </div>
+        <h2
+          class="mt-2.5 text-dark-1 font-bold text-2xl md:text-3xl lg:text-4xl xl:text-[40px] xl:leading-[48px] tracking-tight text-center md:text-left">
+          Our Team</h2>
+        <div
+          class="mt-10 lg:mt-[52px] ml-[calc(50%-120px)] lg:ml-[52px] pt-5 lg:pt-10 pl-3 lg:pl-5 pb-36 lg:pb-0 rounded-xl bg-white bg-no-repeat bg-question-card [background-size:270%] lg:[background-size:108%] [background-position-x:-30px] [background-position-y:122%] w-60 lg:w-[412px] h-auto lg:h-[360px] -rotate-[7.62deg] z-[1] relative">
+          <img loading="lazy" src="./assets/logo-1.png" class="h-[34px]" alt="Logo">
+          <h5 class="mt-8 font-semibold text-[22px] leading-[36px] xl:text-[28px] xl:leading-[42px] text-dark-1">
+            Any questions?</h5>
+          <p class="mt-3 text-xs md:text-sm lg:text-base text-grey-1">
+            Contact us and we will answer any of your questions
+          </p>
+          <a class="block relative h-[36px] md:h-[46px] border-solid pl-6 pt-px md:pt-1.5 rounded-full bg-white overflow-hidden group mx-auto md:mx-0 leading-[30px] mt-4 w-44 pt-0.5 md:pt-2 border border-sapphire"
+            href="mailto:info@fitwall.com">
+            <span
+              class="absolute top-0 left-0 w-full h-full transition-transform duration-500 origin-top-right scale-x-0 scale-y-100 rounded-full bg-sapphire group-hover:scale-x-100 group-hover:origin-bottom-left ease-slow-in-out"></span>
+            <span
+              class="relative text-xs font-semibold uppercase duration-500 md:text-sm text-sapphire group-hover:text-white">Contact
+              Us</span>
+            <div
+              class="absolute right-0 top-0 aspect-[1/1] h-full rounded-full bg-sapphire group-hover:bg-transparent ease-in duration-[900ms]">
+              <i
+                class="fas fa-chevron-right text-white text-[8px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></i>
+            </div>
+          </a>
+        </div>
+        <img class="absolute top-1.5 -left-[51px] md:min-w-[711px]" loading="lazy" src="./assets/radial-1.png" alt="">
+        <img class="absolute -top-11 -left-[155px] md:min-w-[710px]" loading="lazy" src="./assets/radial-2.png" alt="">
+        <img class="absolute -top-[60px] -left-3 md:min-w-[711px]" loading="lazy" src="./assets/radial-3.png" alt="">
+      </div>
+      <div
+        class="w-[270px] md:w-1/2 float-left mt-[86px] pl-0 md:pl-10 ml-[calc(50%-135px)] md:ml-0 wow fadeInUp animated"
+        data-wow-delay="300ms" data-wow-duration="1500ms"
+        style="visibility: visible; animation-duration: 1500ms; animation-delay: 300ms; animation-name: fadeInUp;">
+        <div class="flex items-center ">
+          <div class="w-[108px] h-[108px] mr-4 md:mr-7">
+            <img loading="lazy" src="./assets/logo-circle.png" class="min-w-[133px] relative -top-[3px] -left-3"
+              alt="Logo in Circle">
+          </div>
+          <div>
+            <div class="text-[10px] md:text-xs text-grey-1">Affiliate Manager</div>
+            <h6
+              class="py-2 font-semibold text-base md:text-lg lg:text-xl xl:text-[22px] leading-6 md:leading-7 lg:leading-8 xl:leading-[35px] text-dark-1">
+              Bobby</h6>
+            <a href="mailto:bobby@fitwall.com" class="flex items-center mt-2 text-xs text-dark-1 md:text-sm">
+              <img loading="lazy" src="./assets/at.png" class="w-6 h-6 mr-2 text-blue-3" alt="email">
+              bobby@fitwall.com
+            </a>
+            <a href="skype:bobby.fitwall?chat" class="flex items-center mt-2 text-xs text-dark-1 md:text-sm">
+              <img loading="lazy" src="./assets/skype.png" class="w-6 h-6 mr-2 text-blue-3" alt="skype">
+              bobby.fitwall
+            </a>
+          </div>
+        </div>
+        <div class="flex items-center  mt-[30px] ">
+          <div class="w-[108px] h-[108px] mr-4 md:mr-7">
+            <img loading="lazy" src="./assets/logo-circle.png" class="min-w-[133px] relative -top-[3px] -left-3"
+              alt="Logo in Circle">
+          </div>
+          <div>
+            <div class="text-[10px] md:text-xs text-grey-1">Affiliate Manager</div>
+            <h6
+              class="py-2 font-semibold text-base md:text-lg lg:text-xl xl:text-[22px] leading-6 md:leading-7 lg:leading-8 xl:leading-[35px] text-dark-1">
+              Dee</h6>
+            <a href="mailto:dee@fitwall.com" class="flex items-center mt-2 text-xs text-dark-1 md:text-sm">
+              <img loading="lazy" src="./assets/at.png" class="w-6 h-6 mr-2 text-blue-3" alt="email">
+              dee@fitwall.com
+            </a>
+            <a href="skype:live:dee_fitwall?chat" class="flex items-center mt-2 text-xs text-dark-1 md:text-sm">
+              <img loading="lazy" src="./assets/skype.png" class="w-6 h-6 mr-2 text-blue-3" alt="skype">
+              live:dee_fitwall
+            </a>
+          </div>
+        </div>
+        <div class="flex items-center  mt-[30px] ">
+          <div class="w-[108px] h-[108px] mr-4 md:mr-7">
+            <img loading="lazy" src="./assets/logo-circle.png" class="min-w-[133px] relative -top-[3px] -left-3"
+              alt="Logo in Circle">
+          </div>
+          <div>
+            <div class="text-[10px] md:text-xs text-grey-1">Affiliate Manager</div>
+            <h6
+              class="py-2 font-semibold text-base md:text-lg lg:text-xl xl:text-[22px] leading-6 md:leading-7 lg:leading-8 xl:leading-[35px] text-dark-1">
+              Zach</h6>
+            <a href="mailto:zach@fitwall.com" class="flex items-center mt-2 text-xs text-dark-1 md:text-sm">
+              <img loading="lazy" src="./assets/at.png" class="w-6 h-6 mr-2 text-blue-3" alt="email">
+              zach@fitwall.com
+            </a>
+            <a href="skype:zach.fitwall?chat" class="flex items-center mt-2 text-xs text-dark-1 md:text-sm">
+              <img loading="lazy" src="./assets/skype.png" class="w-6 h-6 mr-2 text-blue-3" alt="skype">
+              zach.fitwall
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="clear-left"></div>
+    </div>
+  </section>
+
+  <section class="py-16 md:pt-[100px] md:pb-20 relative" style="background-color: rgb(8 10 27);">
+    <div class="mx-auto w-full-sm md:w-full-md lg:w-full-lg xl:w-content">
+      <div
+        class="w-[450px] max-w-full md:w-1/2 float-left md:mt-24 ml-0 xs:ml-[calc(50%-225px)] md:ml-0 wow slideInLeft animated"
+        data-wow-delay="00ms" data-wow-duration="1500ms"
+        style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: slideInLeft;">
+        <h2
+          class="text-dark-1 text-2xl md:text-3xl lg:text-4xl xl:text-[40px] leading-[48px] font-bold tracking-tight text-center md:text-left"
+          style="color: #2F9691;">
+          Elevate Your Profits
+        </h2>
+        <p class="mt-4 text-xs leading-normal md:text-sm lg:text-base text-grey-1 xl:w-[496px] max-w-[496px]">
+          Explore how our specialized content locking techniques can catapult your earnings to new heights.
+          Your content, your revenue, optimized.
+        </p>
+        <a class="block relative h-[36px] md:h-[46px] border-solid pl-6 pt-px md:pt-1.5 rounded-full bg-white overflow-hidden group mx-auto md:mx-0 leading-[30px] mt-6 w-44 pt-0.5 md:pt-2 border border-sapphire"
+          href="javascript:void(0)">
+          <span
+            class="absolute top-0 left-0 w-full h-full transition-transform duration-500 origin-top-right scale-x-0 scale-y-100 rounded-full bg-sapphire group-hover:scale-x-100 group-hover:origin-bottom-left ease-slow-in-out"></span>
+          <span
+            class="relative text-xs font-semibold uppercase duration-500 md:text-sm text-sapphire group-hover:text-white">Read
+            More</span>
+          <div
+            class="absolute right-0 top-0 aspect-[1/1] h-full rounded-full bg-sapphire group-hover:bg-transparent ease-in duration-[900ms]">
+            <i
+              class="fas fa-chevron-right text-white text-[8px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></i>
+          </div>
+        </a>
+      </div>
+      <div
+        class="w-[450px] max-w-full md:w-1/2 float-left pl-0 md:pl-7 ml-0 xs:ml-[calc(50%-225px)] md:ml-0 mt-14 md:mt-0 -mb-6 lg:-mt-6 wow fadeInUp animated"
+        data-wow-delay="300ms" data-wow-duration="1500ms"
+        style="visibility: visible; animation-duration: 1500ms; animation-delay: 300ms; animation-name: fadeInUp;">
+        <a href="javascript:void(0)" class="flex flex-col gap-4 overflow-hidden rounded-lg bg-alice-blue shadow-xl
+        lg:rounded-none lg:flex-row lg:gap-6 lg:py-6 lg:bg-transparent lg:shadow-transparent
+        lg:border-b border-periwinkle border-solid
+                mb-6 lg:mb-0
+        ">
+          <div
+            class="overflow-hidden aspect-[2/1]  rounded-t-lg lg:min-w-[176px] lg:w-44 lg:rounded-md lg:aspect-auto ">
+            <img loading="lazy" src="./assets/85fe5a4b-d840-431f-8e1e-c1e7cfd4e064.jpg"
+              alt="affiliate marketing without followers"
+              class="object-cover object-center w-full h-full transition-all duration-300 hover:scale-110"
+              data-xblocker="passed" style="visibility: visible;">
+          </div>
+          <div class="flex flex-col flex-1 p-4 pt-0  lg:p-0 ">
+            <h3 class="flex items-center text-base font-semibold tracking-tight md:text-lg xl:text-xl"
+              style="color: #2F9691;">
+              How to Start Affiliate Marketing Without Followers
+            </h3>
+            <p class="mt-2 text-xs leading-6 md:text-sm md:leading-8 text-grey-2">
+              <i class="mr-2 fas fa-calendar-alt"></i>February 2, 2024
+            </p>
+            <div class="flex-1"></div>
+            <span class="flex items-center mt-2 text-xs font-medium leading-6 text-sapphire md:text-sm md:leading-8">
+              View
+              <i class="fas fa-chevron-right text-sapphire ml-2.5"></i>
+            </span>
+          </div>
+        </a>
+        <a href="javascript:void(0)" class="flex flex-col gap-4 overflow-hidden rounded-lg bg-alice-blue shadow-xl
+        lg:rounded-none lg:flex-row lg:gap-6 lg:py-6 lg:bg-transparent lg:shadow-transparent
+        lg:border-b border-periwinkle border-solid
+                mb-6 lg:mb-0
+        ">
+          <div
+            class="overflow-hidden aspect-[2/1]  rounded-t-lg lg:min-w-[176px] lg:w-44 lg:rounded-md lg:aspect-auto ">
+            <img loading="lazy" src="./assets/612efc7a-b797-4550-9c6c-ec86773868d1.jpg" alt="tier 1 countries blog post"
+              class="object-cover object-center w-full h-full transition-all duration-300 hover:scale-110"
+              data-xblocker="passed" style="visibility: visible;">
+          </div>
+          <div class="flex flex-col flex-1 p-4 pt-0  lg:p-0 ">
+            <h3 class="flex items-center text-base font-semibold tracking-tight md:text-lg xl:text-xl"
+              style="color: #2F9691;">
+              Tier 1 Countries
+            </h3>
+            <p class="mt-2 text-xs leading-6 md:text-sm md:leading-8 text-grey-2">
+              <i class="mr-2 fas fa-calendar-alt"></i>November 27, 2023
+            </p>
+            <div class="flex-1"></div>
+            <span class="flex items-center mt-2 text-xs font-medium leading-6 text-sapphire md:text-sm md:leading-8">
+              View
+              <i class="fas fa-chevron-right text-sapphire ml-2.5"></i>
+            </span>
+          </div>
+        </a>
+        <a href="javascript:void(0)" class="flex flex-col gap-4 overflow-hidden rounded-lg bg-alice-blue shadow-xl
+        lg:rounded-none lg:flex-row lg:gap-6 lg:py-6 lg:bg-transparent lg:shadow-transparent
+                mb-6 lg:mb-0
+        ">
+          <div
+            class="overflow-hidden aspect-[2/1]  rounded-t-lg lg:min-w-[176px] lg:w-44 lg:rounded-md lg:aspect-auto ">
+            <img loading="lazy" src="./assets/d38974c8-d16d-4371-a3b6-1a5810ec89ec.jpg" alt="smart links"
+              class="object-cover object-center w-full h-full transition-all duration-300 hover:scale-110"
+              data-xblocker="passed" style="visibility: visible;">
+          </div>
+          <div class="flex flex-col flex-1 p-4 pt-0  lg:p-0 ">
+            <h3 class="flex items-center text-base font-semibold tracking-tight md:text-lg xl:text-xl"
+              style="color: #2F9691;">
+              Smart Links
+            </h3>
+            <p class="mt-2 text-xs leading-6 md:text-sm md:leading-8 text-grey-2">
+              <i class="mr-2 fas fa-calendar-alt"></i>November 21, 2023
+            </p>
+            <div class="flex-1"></div>
+            <span class="flex items-center mt-2 text-xs font-medium leading-6 text-sapphire md:text-sm md:leading-8">
+              View
+              <i class="fas fa-chevron-right text-sapphire ml-2.5"></i>
+            </span>
+          </div>
+        </a>
+      </div>
+      <div class="clear-left"></div>
+    </div>
+  </section>
+
+  <section class="modal-body">
+    <div id="register">
+      <div class="app">
+        <div class="container">
+          <div class="content content-centered content-boxed">
+            <div class="box" style="background-color: rgb(8 10 27);">
+              <a href="javascript:void(0)" class="flex float-right transition-all duration-500 hover:rotate-90 toggle"
+                onclick="btnCancel('register')" style=" margin: 20px 20px 0 0;">
+                <span class="text-white material-icons">close</span>
+              </a>
+              <div id="tab-top" class="box-signup">
+                <div class="box-header text-center">
+                  <img src="./assets/logo-6.png" alt="Fitwall" class="logo-md" style="height: 100px;">
+                </div>
+                <form novalidate="novalidate" class="form">
+                  <div data-tabs="steps">
+                    <div class="box-body personal-info" style="display: block;">
+                      <div class="header">
+                        <p class="title-md">Address information</p>
+                        <p class="title-sm">Set your address details below</p>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-4"><label for="field-first_name" class="label label-block">First Name</label>
+                        </div>
+                        <div class="col-sm-6">
+                          <div>
+                            <input placeholder="insert your ..." type="text"
+                              class="input input-text input-block input-md" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-4"><label for="field-last_name" class="label label-block">Last Name</label>
+                        </div>
+                        <div class="col-sm-6">
+                          <div>
+                            <input placeholder="insert your ..." type="text"
+                              class="input input-text input-block input-md" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-4"><label for="field-last_name" class="label label-block">Birthday</label>
+                        </div>
+                        <div class="col-sm-6">
+                          <div style="display: flex;">
+                            <input placeholder="insert your ..." type="date"
+                              class="input input-text input-block input-md" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-4"><label for="field-last_name" class="label label-block">Gender</label>
+                        </div>
+                        <div class="col-sm-6">
+                          <div style="display: flex;">
+                            <select name="gender" class="input input-text input-block input-md">
+                              <option value="male" class="input-text input-block input-md">Male</option>
+                              <option value="female" class="input-text input-block input-md">Female</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row" style="padding-left: 10px;">
+                        <div class="col-md-4"
+                          style="display: flex; align-items: center; justify-content: space-between; margin: 0;">
+                          <div class="col-sm-3"><label for="field-last_name" class="label label-block">Height
+                            </label>
+                          </div>
+                          <div class="col-sm">
+                            <div style="display: flex;">
+                              <input placeholder="insert your ..." type="number" min="1"
+                                class="input input-text input-block input-md"
+                                style="border-top-right-radius: 0;border-bottom-right-radius: 0;;">
+                              <button
+                                style="background-color: #ffffff; height: 50px; width: 35px; border-top-right-radius: 3px;border-bottom-right-radius: 3px; padding: 5px;">
+                                cm</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4"
+                          style="display: flex; align-items: center; justify-content: space-between; margin: 0;">
+                          <div class="col-sm-3"><label for="field-last_name" class="label label-block">Weight</label>
+                          </div>
+                          <div class="col-sm">
+                            <div style="display: flex;">
+                              <input placeholder="insert your ..." type="number" min="1"
+                                class="input input-text input-block input-md"
+                                style="border-top-right-radius: 0;border-bottom-right-radius: 0;;">
+                              <button
+                                style="background-color: #ffffff; height: 50px; width: 35px; border-top-right-radius: 3px;border-bottom-right-radius: 3px; padding: 5px;">
+                                kg </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4"
+                          style="display: flex; align-items: center; justify-content: space-between; margin: 0;">
+                          <div class="col-sm-6"><label for="field-last_name" class="label label-block">Hide
+                              Weight</label>
+                          </div>
+                          <div class="col-sm">
+                            <div style="display: flex;">
+                              <input type="checkbox" class="input input-md input-checkbox input-block">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-sm-4"><label for="field-address1" class="label label-block">Address</label>
+                        </div>
+                        <div class="col-sm-6">
+                          <div>
+                            <input placeholder="insert your ..." type="text"
+                              class="input input-text input-block input-md" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-4"><label for="field-city" class="label label-block">City</label></div>
+                        <div class="col-sm-6">
+                          <div>
+                            <input placeholder="insert your ..." type="text"
+                              class="input input-text input-block input-md" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-4"><label for="field-zipcode" class="label label-block">ZipCode</label></div>
+                        <div class="col-sm-6">
+                          <div>
+                            <input placeholder="insert your ..." type="text"
+                              class="input input-text input-block input-md" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div>
+                            <a type="button" class="btn tooltip-wrap btn btn-md btn-block"
+                              onclick="btnCancel('register')">Cancel</a>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div>
+                            <button type="button" class="btn btn-md btn-block"
+                              onclick="NextStep('personal-security', 0)">Next Step</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="box-body personal-security" style="display: none;">
+                      <div class="header">
+                        <p class="title-md">Account information</p>
+                        <p class="title-sm">Please set up your account details below</p>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-4"><label for="field-email" class="label label-block">Email</label>
+                          <p>Your email will be used for contact purpose and also as login</p>
+                        </div>
+                        <div class="col-sm-6">
+                          <div>
+                            <input placeholder="insert your ..." type="email"
+                              class="input input-text input-block input-md" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-4"><label for="field-password" class="label label-block">Password</label>
+                          <p>Enter and confirm a password</p>
+                        </div>
+                        <div class="col-sm-6">
+                          <div>
+                            <input placeholder="insert your ..." minlength="8" maxlength="16" type="password"
+                              class="input input-text input-block input-md" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-4"><label for="field-password_confirmation" class="label label-block">Repeat
+                            Your Password</label></div>
+                        <div class="col-sm-6">
+                          <div>
+                            <input placeholder="insert your ..." type="password"
+                              class="input input-text input-block input-md" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div>
+                            <a type="button" class="btn tooltip-wrap btn btn-md btn-block"
+                              onclick="btnCancel('register')">Cancel</a>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div>
+                            <button type="submit" class="btn tooltip-wrap btn btn-md btn-block">Sing Up</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="login">
+      <div class="app">
+        <div class="container">
+          <div class="content content-centered content-boxed">
+            <div class="box" style="background-color: rgb(8 10 27);">
+              <a href="javascript:void(0)" class="flex float-right transition-all duration-500 hover:rotate-90"
+                onclick="btnCancel('login')" style=" margin: 20px 20px 0 0;">
+                <span class="text-white material-icons">close</span>
+              </a>
+              <div id="tab-top" class="box-signup">
+                <div class="box-header text-center"><img src="./assets/logo-6.png" alt="Fitwall" class="logo-md"
+                    style="height: 100px;"></div>
+                <form novalidate="novalidate" class="form">
+                  <div data-tabs="steps">
+                    <div class="box-body">
+                      <div class="header">
+                        <p class="title-md">Account information</p>
+                        <p class="title-sm">Please set up your account details below</p>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-4"><label for="field-email" class="label label-block">Email</label>
+                        </div>
+                        <div class="col-sm-6">
+                          <div>
+                            <input placeholder="insert your ..." type="email"
+                              class="input input-text input-block input-md" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-4"><label for="field-password" class="label label-block">Password</label>
+                        </div>
+                        <div class="col-sm-6">
+                          <div>
+                            <input placeholder="insert your ..." minlength="8" maxlength="16" type="password"
+                              class="input input-text input-block input-md" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div>
+                            <button type="submit" class="btn tooltip-wrap btn btn-md btn-block">Login</button>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div>
+                            <a type="button" class="btn tooltip-wrap btn btn-md btn-block "
+                              onclick="btnCancel('login')">Cancel</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- main-footer -->
+  <footer class="relative pt-36">
+    <img loading="lazy" src="./assets/profitable-bg.png"
+      class="absolute top-0 left-0 object-cover object-left h-full lg:object-fill lg:w-full" alt="Background"
+      data-xblocker="passed" style="visibility: visible;">
+    <div class="mx-auto w-full-sm md:w-full-md lg:w-full-lg xl:w-content">
+      <div class="relative py-24 md:-mx-4">
+        <div
+          class="w-[450px] max-w-full md:w-full lg:w-1/3 float-left md:px-4 md:mb-10 lg:mb-0 ml-0 xs:ml-[calc(50%-225px)] md:ml-0 text-center md:text-left">
+          <a href="javascript:void(0)"><img src="./assets/fitwall_logo.png" alt=""
+              class="w-40 mb-10 md:w-48 lg:w-3/4"></a>
+          <p class="text-xs text-left md:text-sm lg:text-base xl:text-lg text-grey-1 mb-7">Fitwall is a Mobile
+            &amp; Desktop content locking network that helps affiliates, webmasters, and developers monetize
+            their mobile and desktop traffic by promoting iOS &amp; Android apps and content surveys and
+            downloads for desktop.</p>
+          <ul class="flex items-center gap-4">
+            <li>
+              <h6 class="text-xs font-medium leading-normal md:text-sm lg:text-base text-sapphire">Follow
+                Us :</h6>
+            </li>
+            <li>
+              <a href="javascript:void(0)" target="_blank" class="text-grey-1 hover:text-sapphire">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" target="_blank" class="text-grey-1 hover:text-sapphire">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" target="_blank" class="text-grey-1 hover:text-sapphire">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" target="_blank" class="text-grey-1 hover:text-sapphire">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="w-[450px] max-w-full md:w-1/3 lg:w-1/4 float-left md:px-4 mt-10 md:mt-0 lg:mt-3 ml-0 xs:ml-[calc(50%-225px)] md:ml-0">
+          <h4
+            class="mb-10 text-base font-semibold tracking-tight text-center md:text-lg lg:text-xl xl:text-2xl text-dark-1 md:text-left">
+            Support
+          </h4>
+          <ul class="text-xs md:text-sm lg:text-base">
+            <li class="  mb-3 ">
+              <a href="mailto:info@fitwall.com" class="text-grey-1 hover:text-sapphire">
+                <i class="fas fa-angle-right mx-0.5 text-base"></i>
+                Contact Us
+              </a>
+            </li>
+            <li class=" ">
+              <a href="javascript:void(0)" class="text-grey-1 hover:text-sapphire">
+                <i class="fas fa-angle-right mx-0.5 text-base"></i>
+                Visit Knowledge Base
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="w-[450px] max-w-full md:w-1/3 lg:w-1/6 float-left md:px-4 mt-10 md:mt-0 lg:mt-3 ml-0 xs:ml-[calc(50%-225px)] md:ml-0">
+          <h4
+            class="mb-10 text-base font-semibold tracking-tight text-center md:text-lg lg:text-xl xl:text-2xl text-dark-1 md:text-left">
+            Links
+          </h4>
+          <ul class="text-xs md:text-sm lg:text-base">
+            <li class="  mb-3 ">
+              <a href="javascript:void(0)" class="text-grey-1 hover:text-sapphire">
+                <i class="fas fa-angle-right mx-0.5 text-base"></i>
+                Dashboard
+              </a>
+            </li>
+            <li class="  mb-3 ">
+              <a href="javascript:void(0)" class="text-grey-1 hover:text-sapphire">
+                <i class="fas fa-angle-right mx-0.5 text-base"></i>
+                Login
+              </a>
+            </li>
+            <li class="mb-3" onclick="btnSign('btnSign')">
+              <a href="javascript:void(0)" class="text-grey-1 hover:text-sapphire">
+                <i class="fas fa-angle-right mx-0.5 text-base"></i>
+                Register
+              </a>
+            </li>
+            <li class=" ">
+              <a href="javascript:void(0)" class="text-grey-1 hover:text-sapphire">
+                <i class="fas fa-angle-right mx-0.5 text-base"></i>
+                Blog
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="w-[450px] max-w-full md:w-1/3 lg:w-1/4 float-left md:px-4 mt-10 md:mt-0 lg:mt-3 ml-0 xs:ml-[calc(50%-225px)] md:ml-0">
+          <h4
+            class="mb-10 text-base font-semibold tracking-tight text-center md:text-lg lg:text-xl xl:text-2xl text-dark-1 md:text-left">
+            Contact Info
+          </h4>
+          <ul class="text-xs md:text-sm lg:text-base">
+            <li class=" flex text-grey-1   mb-3 ">
+              <i class="fas fa-map-marker-alt text-sapphire mr-2.5 text-xl"></i>
+              222 W. Merchandise Mart Plaza, Suite 1212<br>Chicago, IL 60654
+            </li>
+            <li class=" ">
+              <a href="mailto:info@fitwall.com" class="text-grey-1 hover:text-sapphire">
+                <img loading="lazy" src="./assets/at.png" class="w-5 h-5 mr-0.5" alt="at">
+                fitwall.com
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="clear-left"></div>
+      </div>
+      <div class="relative border-b border-solid border-grey-1 opacity-20"></div>
+      <div class="relative py-4 text-xs text-center md:text-sm lg:text-base xl:text-lg text-sapphire">
+        © 2024 <a href="#/">Fitwall</a>. All rights reserved
+      </div>
+    </div>
+  </footer>
+  <!-- main-footer end -->
+
+  <!--Scroll to top-->
+  <template x-if="true"></template><button
+    class="fixed w-12 h-12 leading-[48px] right-12 text-base z-[99] text-white bg-dark-1 text-center cursor-pointer transition-all duration-1000 hover:bg-sapphire hover:shadow-2xl bottom-10"
+    :class="{&#39;bottom-10&#39;: sticky, &#39;bottom-[105%]&#39;: !sticky}" x-on:click="goTop">
+    <span class="fas fa-arrow-up"></span>
+  </button>
+
+
+  <script>
+    var modal = document.getElementsByClassName("app");
+
+    function NextStep(info, num) {
+      var boxBody = document.getElementsByClassName('box-body')[num];
+      var registerPerson = document.getElementsByClassName(info)[0];
+      boxBody.style.display = 'none';
+      registerPerson.style.display = 'block';
+    }
+
+    function btnSign(param, state) {
+      if (param == 'btnRegister') {
+        document.getElementById('register').style.display = 'block'
+        document.getElementById('login').style.display = 'none'
+      } else {
+        document.getElementById('register').style.display = 'none'
+        document.getElementById('login').style.display = 'block'
+      }
+    }
+
+    function btnCancel(param) {
+      document.getElementById(param).style.display = 'none'
+    }
+
+    window.onclick = function (event) {
+      if (event.target == modal[0]) {
+        document.getElementById('register').style.display = 'none'
+      } else if (event.target == modal[1]) {
+        document.getElementById('login').style.display = 'none'
+      }
+    }
+  </script>
+  <script src="./assets/wow.min.js.download"></script>
+  <script src="./assets/app-b37a3b20.js.download"></script>
+
+
+
+</body><!-- End of .page_wrapper -->
+
+</html>
